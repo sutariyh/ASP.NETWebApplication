@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="9e156b4e84dc4ba68266f08a6960730e" Name="Diagram1" ZoomLevel="94">
+        <EntityTypeShape EntityType="MYDBprojectModel.attendance" Width="1.5" PointX="3" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MYDBprojectModel.classs" Width="1.5" PointX="2" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MYDBprojectModel.inventory" Width="1.5" PointX="11.25" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MYDBprojectModel.login" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MYDBprojectModel.payment" Width="1.5" PointX="9.125" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MYDBprojectModel.rank" Width="1.5" PointX="7.375" PointY="8.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="MYDBprojectModel.student" Width="1.5" PointX="5" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MYDBprojectModel.student_reg" Width="1.5" PointX="5" PointY="8.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="MYDBprojectModel.students_parent" Width="1.5" PointX="7.125" PointY="3.75" IsExpanded="true" />
+        <AssociationConnector Association="MYDBprojectModel.FK__attendanc__class__46E78A0C" ManuallyRouted="false" />
+        <AssociationConnector Association="MYDBprojectModel.FK__attendanc__stude__47DBAE45" ManuallyRouted="false" />
+        <AssociationConnector Association="MYDBprojectModel.FK__class__student_i__440B1D61" ManuallyRouted="false" />
+        <AssociationConnector Association="MYDBprojectModel.FK__student_r__class__4E88ABD4" ManuallyRouted="false" />
+        <AssociationConnector Association="MYDBprojectModel.FK__payment__invento__403A8C7D" ManuallyRouted="false" />
+        <AssociationConnector Association="MYDBprojectModel.FK__payment__student__412EB0B6" ManuallyRouted="false" />
+        <AssociationConnector Association="MYDBprojectModel.FK__rank__student_id__5BE2A6F2" ManuallyRouted="false" />
+        <AssociationConnector Association="MYDBprojectModel.FK__student_r__stude__4F7CD00D" ManuallyRouted="false" />
+        <AssociationConnector Association="MYDBprojectModel.FK__students___stude__398D8EEE" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

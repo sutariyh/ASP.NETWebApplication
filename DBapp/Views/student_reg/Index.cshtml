@@ -1,0 +1,53 @@
+﻿@model IEnumerable<DBapp.Models.student_reg>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+@using (Html.BeginForm("Index", "student_reg", FormMethod.Post))
+{
+    <div>
+        Search by student name @Html.TextBox("searchString")
+        <input id="Submit1" type="submit" value="Filter" />
+    </div>
+}
+<table class="table">
+    <tr>
+        <th>
+            Student Registered
+        </th>
+        <th>
+            Class Level
+        </th>
+        <th>
+            Student Name
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.student_reg_registered)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.classs.class_level)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.student.student_name)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = item.student_reg_id }) |
+                @Html.ActionLink("Details", "Details", new { id = item.student_reg_id }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.student_reg_id })
+            </td>
+        </tr>
+    }
+
+</table>

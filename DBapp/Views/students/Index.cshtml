@@ -1,0 +1,78 @@
+﻿@model IEnumerable<DBapp.Models.student>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+@using (Html.BeginForm("Index", "students", FormMethod.Post))
+{
+    <div>
+        Search @Html.TextBox("searchString")
+        <input id="Submit1" type="submit" value="Filter" />
+
+    </div>
+}
+<table class="table">
+    <tr>
+        <th>
+            Name(First+last)
+        </th>
+        <th>
+            Date Of Birth  
+        </th>
+        <th>
+            Date Of Join
+        </th>
+        <th>
+            Phone Number
+        </th>
+        <th>
+            Email
+        </th>
+        <th>
+            Address
+        </th>
+        <th>
+            IsActive
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.student_name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.student_dob)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.student_doj)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.student_phone)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.student_email)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.student_address)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.student_isactive)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = item.student_id }) |
+                @Html.ActionLink("Details", "Details", new { id = item.student_id }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.student_id })
+            </td>
+        </tr>
+    }
+
+</table>

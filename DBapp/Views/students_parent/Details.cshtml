@@ -1,0 +1,66 @@
+﻿+@model DBapp.Models.students_parent
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>students_parent</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            Mobile Number
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.students_parent_mobile)
+        </dd>
+
+        <dt>
+            Email
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.students_parent_email)
+        </dd>
+
+        <dt>
+            Parent Is Student
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.students_parent_isstudent)
+        </dd>
+
+        <dt>
+            Mothername
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.students_parent_mothername)
+        </dd>
+
+        <dt>
+            Fathername
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.students_parent_fathername)
+        </dd>
+
+        <dt>
+            Student name
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.student.student_name)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.students_parent_id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

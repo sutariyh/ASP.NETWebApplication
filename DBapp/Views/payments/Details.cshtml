@@ -1,0 +1,58 @@
+﻿@model DBapp.Models.payment
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>payment</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            Category
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.payment_category)
+        </dd>
+
+        <dt>
+            Amount
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.payment_amount)
+        </dd>
+
+        <dt>
+            Date
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.payment_date)
+        </dd>
+
+        <dt>
+            Inventory Category
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.inventory.inventory_category)
+        </dd>
+
+        <dt>
+            Student Name
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.student.student_name)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.payment_id}) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

@@ -1,0 +1,97 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+<!-- <p><a href="https://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>-->
+<style>
+    .carousel-caption {
+        position: absolute;
+        right: 15%;
+        bottom: 141px;
+        left: 15%;
+        z-index: 10;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        color: #fff;
+        text-align: center;
+        text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+    }
+
+    h1 {
+        font-size: 57px;
+    }
+
+    h3 {
+        background-color: #ef7350;
+        width: 300px;
+        border: 15px crimson;
+        padding: 10px;
+        margin-left: -870px;
+        margin-top: -48px;
+        border-top-left-radius: 8px;
+    }
+</style>
+
+
+
+<center>
+    <br /><div class="row jumbotron">
+    <h3>Student's Details</h3>
+    <div class="col-md-3">
+        <h2>Student</h2>
+        <p>
+            @Html.ActionLink("STUDENT INFORMATION", "index", "students")
+        </p>
+    </div>
+    
+    <div class="col-md-3">
+        <h2>Student Parents</h2>
+        <p>
+            @Html.ActionLink("STUDENT'S PARENT INFORMATION", "index", "students_parent")
+        </p>
+    </div>
+    <div class="col-md-3">
+        <h2>Inventory</h2>
+        <p>
+            @Html.ActionLink("INVENTORY INFORMATION", "index", "inventories")
+        </p>
+    </div>
+    <div class="col-md-3">
+        <h2>Payment</h2>
+        <p>
+            @Html.ActionLink("PAYMENT INFORMATION", "index", "payments")
+        </p>
+    </div>
+
+</div>
+    <br /><div class="row jumbotron">
+        <h3>Class Details</h3>
+        <div class="col-md-3">
+            <h2>Classes</h2>
+            <p>
+                @Html.ActionLink("CLASS INFORMATION", "index", "classses")
+            </p>
+        </div>
+        <div class="col-md-3">
+            <h2>Attendance</h2>
+            <p>
+                @Html.ActionLink("ATTENDANCE INFORMATION", "index", "attendances")
+            </p>
+        </div>
+        <div class="col-md-3">
+            <h2>Student Class Registration</h2>
+            <p>
+                @Html.ActionLink("STUDENT'S REGISTRATION INFORMATION", "index", "student_reg")
+            </p>
+        </div>
+        <div class="col-md-3">
+            <h2>Rank</h2>
+            <p>
+                @Html.ActionLink("RANK", "index", "ranks")
+            </p>
+        </div>
+
+    </div>
+
+
+
+</center>

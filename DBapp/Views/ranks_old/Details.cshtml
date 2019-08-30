@@ -1,0 +1,42 @@
+﻿@model DBapp.Models.rank
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>rank</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.rank_beltcolor)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.rank_beltcolor)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.rank_date)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.rank_date)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.student.student_name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.student.student_name)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.rank_id}) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

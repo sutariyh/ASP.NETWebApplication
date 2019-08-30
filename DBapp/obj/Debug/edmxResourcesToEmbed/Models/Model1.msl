@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="MYDBprojectModelStoreContainer" CdmEntityContainer="MYDBprojectEntities">
+    <EntitySetMapping Name="attendances">
+      <EntityTypeMapping TypeName="MYDBprojectModel.attendance">
+        <MappingFragment StoreEntitySet="attendance">
+          <ScalarProperty Name="attendance_id" ColumnName="attendance_id" />
+          <ScalarProperty Name="student_id" ColumnName="student_id" />
+          <ScalarProperty Name="class_id" ColumnName="class_id" />
+          <ScalarProperty Name="attendance_attended" ColumnName="attendance_attended" />
+          <ScalarProperty Name="attendance_date" ColumnName="attendance_date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="classses">
+      <EntityTypeMapping TypeName="MYDBprojectModel.classs">
+        <MappingFragment StoreEntitySet="classs">
+          <ScalarProperty Name="class_id" ColumnName="class_id" />
+          <ScalarProperty Name="class_level" ColumnName="class_level" />
+          <ScalarProperty Name="class_day" ColumnName="class_day" />
+          <ScalarProperty Name="class_starttime" ColumnName="class_starttime" />
+          <ScalarProperty Name="class_endtime" ColumnName="class_endtime" />
+          <ScalarProperty Name="student_id" ColumnName="student_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="inventories">
+      <EntityTypeMapping TypeName="MYDBprojectModel.inventory">
+        <MappingFragment StoreEntitySet="inventory">
+          <ScalarProperty Name="inventory_id" ColumnName="inventory_id" />
+          <ScalarProperty Name="inventory_category" ColumnName="inventory_category" />
+          <ScalarProperty Name="inventory_name" ColumnName="inventory_name" />
+          <ScalarProperty Name="inventory_description" ColumnName="inventory_description" />
+          <ScalarProperty Name="inventory_cp" ColumnName="inventory_cp" />
+          <ScalarProperty Name="inventory_sp" ColumnName="inventory_sp" />
+          <ScalarProperty Name="inventory_quantity" ColumnName="inventory_quantity" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="logins">
+      <EntityTypeMapping TypeName="MYDBprojectModel.login">
+        <MappingFragment StoreEntitySet="login">
+          <ScalarProperty Name="Username" ColumnName="Username" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="payments">
+      <EntityTypeMapping TypeName="MYDBprojectModel.payment">
+        <MappingFragment StoreEntitySet="payment">
+          <ScalarProperty Name="payment_id" ColumnName="payment_id" />
+          <ScalarProperty Name="student_id" ColumnName="student_id" />
+          <ScalarProperty Name="inventory_id" ColumnName="inventory_id" />
+          <ScalarProperty Name="payment_category" ColumnName="payment_category" />
+          <ScalarProperty Name="payment_amount" ColumnName="payment_amount" />
+          <ScalarProperty Name="payment_date" ColumnName="payment_date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ranks">
+      <EntityTypeMapping TypeName="MYDBprojectModel.rank">
+        <MappingFragment StoreEntitySet="rank">
+          <ScalarProperty Name="rank_id" ColumnName="rank_id" />
+          <ScalarProperty Name="student_id" ColumnName="student_id" />
+          <ScalarProperty Name="rank_beltcolor" ColumnName="rank_beltcolor" />
+          <ScalarProperty Name="rank_date" ColumnName="rank_date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="students">
+      <EntityTypeMapping TypeName="MYDBprojectModel.student">
+        <MappingFragment StoreEntitySet="student">
+          <ScalarProperty Name="student_name" ColumnName="student_name" />
+          <ScalarProperty Name="student_dob" ColumnName="student_dob" />
+          <ScalarProperty Name="student_doj" ColumnName="student_doj" />
+          <ScalarProperty Name="student_phone" ColumnName="student_phone" />
+          <ScalarProperty Name="student_email" ColumnName="student_email" />
+          <ScalarProperty Name="student_address" ColumnName="student_address" />
+          <ScalarProperty Name="student_id" ColumnName="student_id" />
+          <ScalarProperty Name="student_isactive" ColumnName="student_isactive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="student_reg">
+      <EntityTypeMapping TypeName="MYDBprojectModel.student_reg">
+        <MappingFragment StoreEntitySet="student_reg">
+          <ScalarProperty Name="student_reg_id" ColumnName="student_reg_id" />
+          <ScalarProperty Name="student_id" ColumnName="student_id" />
+          <ScalarProperty Name="class_id" ColumnName="class_id" />
+          <ScalarProperty Name="student_reg_registered" ColumnName="student_reg_registered" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="students_parent">
+      <EntityTypeMapping TypeName="MYDBprojectModel.students_parent">
+        <MappingFragment StoreEntitySet="students_parent">
+          <ScalarProperty Name="students_parent_id" ColumnName="students_parent_id" />
+          <ScalarProperty Name="students_parent_mobile" ColumnName="students_parent_mobile" />
+          <ScalarProperty Name="students_parent_email" ColumnName="students_parent_email" />
+          <ScalarProperty Name="students_parent_isstudent" ColumnName="students_parent_isstudent" />
+          <ScalarProperty Name="students_parent_mothername" ColumnName="students_parent_mothername" />
+          <ScalarProperty Name="students_parent_fathername" ColumnName="students_parent_fathername" />
+          <ScalarProperty Name="student_id" ColumnName="student_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
